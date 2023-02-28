@@ -1,19 +1,26 @@
 #include "main.h"
 /**
- * print_rev - function to declare var 's'
- * @s: variable s
- * Return: Always 0
+ * print_rev - imprime en reversa
+ * @s: string
+ * return: 0
  */
-
 void print_rev(char *s)
 {
-        int c;
+	int longi = 0;
+	int o;
 
-        for (c = 0; s[c] != 0; c++)
-        {
-        }
-        for (c = c - 1; c >= 0; c--)
-                _putchar(s[c]);
-        _putchar('\n');
+	while (*s != '\0')
+	{
+		longi++;
+		s++;
+	}
+	s--;
+	for (o = longi; o > 0; o--)
+	{
+		_putchar(*s);
+		s--;
+	}
 
+	_putchar('\n');
 }
+
