@@ -3,13 +3,14 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+
 /**
- * _puts - prototype for 's'
- * @s: variable s
+ * _putchar - prototype that puts a character
+ * @c: variable containing set of char
  * Return: Always 0 success
  */
 
-void _puts(char *s)
+int _putchar(char c)
 {
-	puts(s);
+	return (putchar(c));
 }
