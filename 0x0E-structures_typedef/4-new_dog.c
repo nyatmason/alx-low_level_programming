@@ -98,7 +98,7 @@
 		}
 		_strcpy(dog->name, name);
 		_strcpy(dog->owner, owner);
-i		dog->age = age;
+		dog->age = age;
 
 
 		return (dog);
